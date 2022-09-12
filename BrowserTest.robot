@@ -8,7 +8,7 @@ ${EOF}            *****************End of File*********************
 
 *** Test Cases ***
 TC1
-    Open Browser    https://www.google.com/    chrome
+    [Setup]    Open Browser    https://www.google.com/    chrome    # setup to open browser
     Maximize Browser Window
     Input Text    name=q    Robot Framework
     Press Keys    name=q    RETURN
@@ -25,6 +25,6 @@ TC1
     Append To File    ${PATH}    ${Text3}\n    SYSTEM
     Append To File    ${PATH}    ${Text4}\n    SYSTEM
     Append To File    ${PATH}    ${EOF}    SYSTEM
-    Log    *****************End of File*********************
+    Log    ${EOF}
     Capture Page Screenshot    page.png
-    Close Browser
+    [Teardown]    Close Browser    # teardown to close browser
