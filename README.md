@@ -1,4 +1,5 @@
 # GitRepo
+<<<<<<< HEAD
 # Assignment on Robot Framework
 ### Table of Content
 * General Info
@@ -40,3 +41,5 @@ To run this project:
 * https://robotframework.org
 * https://www.tutorialspoint.com
 
+=======
+>>>>>>> 5a51b784a8697553a7a40c1f062e1c7100966d1e
